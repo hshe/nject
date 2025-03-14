@@ -44,4 +44,5 @@ pub fn setup_app(
         > + 'static,
 > {
     App::new().app_data(provider).service(user::create_scope())
+    .service(user::cpu_scope())
 }

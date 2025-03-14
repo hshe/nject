@@ -4,7 +4,7 @@ mod repository;
 mod routes;
 mod service;
 use nject::{inject, injectable, module};
-pub use routes::create_scope;
+pub use routes::{create_scope, cpu_scope};
 use std::ops::Deref;
 
 // The options are specied by a provider
